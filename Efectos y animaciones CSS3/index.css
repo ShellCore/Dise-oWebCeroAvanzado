@@ -14,25 +14,24 @@ div {
     vertical-align: middle;
 }
 
-.caja:hover {
-    -webkit-animation: 1s vaiven 1;
-    
+.inRotativo {
+    -webkit-animation: 1s inRotativo 1;
 }
 
-@-webkit-keyframes vaiven {
-    15% {
-        -webkit-transform: rotate(-10deg) translateX(-25%);
+@-webkit-keyframes inRotativo {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(-100%) rotate(-260deg);
     }
-    30% {
-        -webkit-transform: rotate(5deg) translateX(20%);
-    }
-    45% {
-        -webkit-transform: rotate(-3deg) translateX(-10%);
-    }
-    60% {
-        -webkit-transform: rotate(2deg) translateX(5%);
-    }
-    75% {
-        -webkit-transform: rotate(-1deg) translateX(-3%);
+}
+
+.outRotativo {
+    -webkit-animation: 1s outRotativo 1;
+}
+
+@-webkit-keyframes outRotativo {
+    100%{
+        opacity: 0;
+        -webkit-transform: translateX(100%) rotate(260deg);
     }
 }
