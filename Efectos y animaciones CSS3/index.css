@@ -1,0 +1,33 @@
+div {
+    font-family: 'Arial';
+    background-color: #2ba568;
+    margin: 10px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 15px 30px;
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.triangulo_lateral {
+    -webkit-transform: translateX(0);
+}
+
+.triangulo_lateral:before {
+    content: '';
+    -webkit-transition-duration: 0.3s;
+    
+    border-style: solid;
+    border-width: 15px 15px 15px 0px;
+    border-color: transparent #2ba568  transparent transparent;
+    
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.triangulo_lateral:hover:before {
+    left: -15px;
+}
