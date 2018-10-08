@@ -1,5 +1,5 @@
 body {
-    background: #390c99;
+    background: #0C1022;
 }
 
 div {
@@ -15,25 +15,9 @@ div {
 }
 
 .green_box {
-    position: relative;
+    -webkit-transition-duration: 0.3s
 }
 
-.green_box:before {
-    content: '';
-    position: absolute;
-    border: 4px solid white;
-    top: -16px;
-    bottom: -16px;
-    left: -16px;
-    right: -16px;
-    opacity: 0;
-    -webkit-transition-duration: 0.3s;
-}
-
-.green_box:hover:before {
-    top: -8px;
-    bottom: -8px;
-    left: -8px;
-    right: -8px;
-    opacity: 1;
+.green_box:hover {
+    border-radius: 20px;
 }
