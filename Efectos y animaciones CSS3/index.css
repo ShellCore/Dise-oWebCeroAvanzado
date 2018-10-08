@@ -10,11 +10,41 @@ div {
     vertical-align: middle;
 }
 
-.sombra_difuminada {
-    -webkit-transition-duration: 0.3s;
-    box-shadow: 0px 0px 1px rgba(0,0,0,1);
+.green_box {
+    position: relative;
+    box-shadow: 0px 0px 1px black;
 }
 
-.sombra_difuminada:hover {
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+.green_box:before,
+.green_box:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0px;
+    opacity: 0;
+    -webkit-transition-duration: 0.3s;
+}
+
+.green_box:before {
+    bottom: 100%;
+    background: radial-gradient(
+        ellipse at 50% 150%,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0,0,0,0) 80%
+    );
+}
+
+.green_box:after {
+    top: 100%;
+    background: radial-gradient(
+        ellipse at 50% -50%,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0,0,0,0) 80%
+    );
+}
+
+.green_box:hover:before,
+.green_box:hover:after {
+    opacity: 1;
 }
