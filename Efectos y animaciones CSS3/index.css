@@ -15,20 +15,21 @@ div {
 }
 
 .caja:hover {
-    -webkit-animation: 1s vibrador infinite;
+    -webkit-animation: 1s cartel 1;
+    -webkit-transform-origin: top center;
 }
 
-@-webkit-keyframes vibrador {
-    10%, 30%, 50%, 70%, 90% {
-        -webkit-transform: translateX(-10px);
+@-webkit-keyframes cartel {
+    20% {
+        -webkit-transform: rotate(15deg);
     }
-    20%, 40%, 60%, 80% {
-        -webkit-transform: translateX(10px);
+    40% {
+        -webkit-transform: rotate(-12deg);
     }
-    15%, 35%, 55%, 75%, 95% {
-        -webkit-transform: translateY(10px);
+    60% {
+        -webkit-transform: rotate(8deg);
     }
-    5%, 25%, 45%, 65%, 85% {
-        -webkit-transform: translateY(-10px);
+    80% {
+        -webkit-transform: rotate(-4deg);
     }
 }
