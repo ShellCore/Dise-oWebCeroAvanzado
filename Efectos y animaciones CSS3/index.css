@@ -15,21 +15,14 @@ div {
 }
 
 .caja:hover {
-    -webkit-animation: 5s cambia_color 1;
+    -webkit-animation: 0.5s flash 1;
 }
 
-@-webkit-keyframes cambia_color {
-    /* 0%, 70% {
-        background: blue;
-    }
+@-webkit-keyframes flash {
     50% {
-        background: red;
-        height: 200px;
-    } */
-    from {
-        background: blue;
+        opacity: 1;
     }
-    to {
-        background: yellow;
+    25%, 75% {
+        opacity: 0;
     }
 }
