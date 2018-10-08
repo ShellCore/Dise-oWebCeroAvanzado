@@ -15,14 +15,14 @@ div {
 }
 
 .caja:hover {
-    -webkit-animation: 0.5s flash 1;
+    -webkit-animation: 0.5s click 1;
 }
 
-@-webkit-keyframes flash {
+@-webkit-keyframes click {
     50% {
-        opacity: 1;
+        -webkit-transform: scale(1.2);
     }
     25%, 75% {
-        opacity: 0;
+        -webkit-transform: scale(0.8);
     }
 }
