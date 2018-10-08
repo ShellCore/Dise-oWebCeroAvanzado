@@ -15,21 +15,18 @@ div {
 }
 
 .caja:hover {
-    -webkit-animation: 1s cartel 1;
-    -webkit-transform-origin: top center;
+    -webkit-animation: 1s balanceo 1;
+    
 }
 
-@-webkit-keyframes cartel {
+@-webkit-keyframes balanceo {
     20% {
-        -webkit-transform: rotate(15deg);
+        -webkit-transform: scale(0.7) rotate(-6deg);
     }
-    40% {
-        -webkit-transform: rotate(-12deg);
+    30%, 70% {
+        -webkit-transform: scale(1.1) rotate(6deg);
     }
-    60% {
-        -webkit-transform: rotate(8deg);
-    }
-    80% {
-        -webkit-transform: rotate(-4deg);
+    50%, 90% {
+        -webkit-transform: scale(1.1) rotate(-6deg);
     }
 }
