@@ -1,7 +1,3 @@
-body {
-    background: #620d9b;
-}
-
 div {
     font-family: 'Arial';
     background-color: #2ba568;
@@ -15,9 +11,10 @@ div {
 }
 
 .green_box {
-    border: 4px solid gray;
+    box-shadow: inset 0 0 0 4px #DDD;
+    -webkit-transition-duration: 0.3s
 }
 
 .green_box:hover {
-    background: white;
+    box-shadow: inset 0 0 0 4px #555;
 }
