@@ -15,14 +15,23 @@ div {
 }
 
 .caja:hover {
-    -webkit-animation: 0.5s click 1;
+    -webkit-animation: 1s chicle 1;
 }
 
-@-webkit-keyframes click {
-    50% {
-        -webkit-transform: scale(1.2);
+@-webkit-keyframes chicle {
+    30% {
+        -webkit-transform: 
+            scaleX(1.25)
+            scaleY(0.75);
     }
-    25%, 75% {
-        -webkit-transform: scale(0.8);
+    40% {
+        -webkit-transform: 
+            scaleX(0.75)
+            scaleY(1.25);
+    }
+    60% {
+        -webkit-transform: 
+            scaleX(1.15)
+            scaleY(0.85);
     }
 }
