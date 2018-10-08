@@ -1,3 +1,7 @@
+body {
+    background: #390c99;
+}
+
 div {
     font-family: 'Arial';
     background-color: #2ba568;
@@ -11,10 +15,21 @@ div {
 }
 
 .green_box {
-    box-shadow: inset 0 0 0 4px #DDD;
-    -webkit-transition-duration: 0.3s
+    position: relative;
 }
 
-.green_box:hover {
-    box-shadow: inset 0 0 0 4px #555;
+.green_box:before {
+    content: '';
+    position: absolute;
+    border: 4px solid white;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    opacity: 0;
+    -webkit-transition-duration: 0.3s;
+}
+
+.green_box:hover:before {
+    opacity: 1;
 }
