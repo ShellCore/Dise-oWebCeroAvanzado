@@ -15,18 +15,24 @@ div {
 }
 
 .caja:hover {
-    -webkit-animation: 1s balanceo 1;
+    -webkit-animation: 1s vaiven 1;
     
 }
 
-@-webkit-keyframes balanceo {
-    20% {
-        -webkit-transform: scale(0.7) rotate(-6deg);
+@-webkit-keyframes vaiven {
+    15% {
+        -webkit-transform: rotate(-10deg) translateX(-25%);
     }
-    30%, 70% {
-        -webkit-transform: scale(1.1) rotate(6deg);
+    30% {
+        -webkit-transform: rotate(5deg) translateX(20%);
     }
-    50%, 90% {
-        -webkit-transform: scale(1.1) rotate(-6deg);
+    45% {
+        -webkit-transform: rotate(-3deg) translateX(-10%);
+    }
+    60% {
+        -webkit-transform: rotate(2deg) translateX(5%);
+    }
+    75% {
+        -webkit-transform: rotate(-1deg) translateX(-3%);
     }
 }
